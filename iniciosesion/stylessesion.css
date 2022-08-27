@@ -1,0 +1,46 @@
+@import url(https://www.fontspace.com/servegin-font-f65617);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "servegin";
+    
+}
+body{
+    background: url(/Imagenes/marmolprincipal-sesion.webp);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.contenedor-form{
+    background: linear-gradient(to right, rgba(23,22,53,1), rgba(44,38,85,.5)), url(/Imagenes/marmolsecundario-sesion.webp);
+    max-width: 500px;
+    width: 100%;
+    margin:auto;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 30px rgb(65, 65, 65);
+    padding: 50px;
+}
+.contenedor-form .header{
+    margin-bottom: 50px;
+}
+.contenedor-form .header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+.contenedor-form .fila label{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 7px 0;
+    padding: 0 5px;
+    transition: .5s;
+}
+.contenedor-form .fila input{
+    display: block;
+    width: 100;
+}
