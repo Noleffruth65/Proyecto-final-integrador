@@ -1,0 +1,204 @@
+/*Estilos colores en general */
+header{
+	display:flex;
+    width: 100%;
+	height: 80px;
+    background-color: #b47639;
+    border: 0px solidwithe;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: auto;
+    border-radius: 1px 1px 15px 15px;
+    box-shadow: 0px 3px 5px gray;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		
+	}
+
+	body{
+		background: url(https://img.archiexpo.es/images_ae/photo-g/153665-10707450.jpg);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(172, 134, 77, 0.6);
+		z-index: -1;
+		top: 0; left: 0;
+	}
+
+	/*Estilos para el encabezado*/
+
+    button.inti{
+        border: 0px;
+        border-color: #b47639;
+        background-color: #b47639;
+        text-align: center;
+        padding-left: 5px;
+        position: initial;
+        padding: auto;
+		float: left;
+    }
+
+    img.inti{
+        width: 200px;
+        height: 70px;
+		
+    }
+
+    button.arg{
+        border: 0px;
+        border-color: #b47639;
+        background-color: #b47639;
+        text-align: left;
+        padding-left: 50px;
+        float:left;
+    }
+    
+    img.arg{
+        width: 180px;
+        height: 70px;
+        
+    }
+
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+
+	.logo h1{
+		color: rgb(255, 255, 255);
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	
+	/*Fin de Estilos para el encabezado*/
+
+	/*Botón desplegable de opciones de sesion*/
+	.dropdown{
+		display:flex;
+		background-color: #b47639;
+		border: 0px;
+	}
+	button.sesion{
+		width: 50px;
+		height: 40px;
+		
+	}
+
+	  .dropdown-content {
+		display:none;
+		position:fixed;
+		width: 180px;
+		overflow: auto;
+		font-family: 'Montserrat Alternates', sans-serif;
+		box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+		text-align: justify;
+
+	  }
+	  .dropdown:hover .dropdown-content {
+		display: block;
+	  }
+
+	  .dropdown-content a {
+		display: block;
+		color: white;
+		background-color: #804000;
+		padding: 10px;
+		text-decoration: none;
+		
+	  }
+
+	  .dropdown-content a:hover {
+		color: #FFFFFF;
+		background-color: #9c7f20;;
+		
+	  }
+
+	
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+		
+	}
+
+	.container-menu{
+		position: absolute;
+		background: #804000(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #804000;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #ffffff;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+
+	.cont-menu nav a:hover{
+		border-left: 5px solid #ffe760;
+		background: #9c7f20;
+	}
+
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: rgb(255, 244, 86);
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	
+
