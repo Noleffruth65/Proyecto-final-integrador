@@ -32,6 +32,11 @@ body{
     border-bottom: 2px solid #fcd732;
 }
 
+.contenedor-form .header .selectedd{
+    margin-bottom: 50px;
+    margin: 50px;
+}
+
 .contenedor-form .header p{
     color: #fff;
     text-decoration: none;
